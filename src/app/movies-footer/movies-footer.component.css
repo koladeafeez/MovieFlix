@@ -1,0 +1,89 @@
+.footer {
+    background-color:#343A40;
+     padding-top: 3.2rem;
+     padding-left: 3.2rem;
+    color:#fffff5;
+}
+li{
+    list-style: none;
+}
+
+#icons li {
+    list-style: none;
+    width: 45px;
+    height: 45px;
+    background-image: url(../../assets/img/socialSprites.png);
+  
+}
+
+
+#icons #facebook {
+    background-position: -40px -45px ;
+} 
+#icons #twitter {
+    background-position: -90px -42px ;
+    
+} 
+
+
+#icons #linkedin {
+    background-position: 0 -42px ;
+} 
+
+#icons #facebook:hover {
+    background-position: -42px 0 ;
+} 
+
+#icons #twitter:hover {
+    background-position: -90px 0px ;
+    
+} 
+
+
+#icons #linkedin:hover {
+    background-position: 0 0px ;
+} 
+
+.brand{
+font-size:2.5rem;
+font-family: courier, monospace;
+
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media only screen and (max-width: 576px){
+    #icons li {
+        display:inline-block;
+        list-style: none;
+        /* width: 45px;
+        height: 45px; */
+        background-image: url(../../assets/img/socialSprites.png);
+      
+    }
+    
+
+    }
+
+  
+ /* Medium devices (tablets, 768px and up) */
+
+@media only screen and (max-width: 768px){
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px){
+
+
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px){
+
+}

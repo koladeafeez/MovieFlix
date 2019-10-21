@@ -1,0 +1,27 @@
+ul li {
+    list-style-type: none;
+    margin-top: 2rem;
+}
+.back {
+    margin: 2rem 0;
+    margin-left: 15rem;
+}
+img{
+    margin-top: 30px;
+}
+
+.container{
+    color:#fff;
+    margin-top:5rem;
+    font-family:Helvetica, sans-serif;
+}
+
+.no-movie{
+
+    padding-top: 200px;
+    padding-bottom: 50px;
+    color:#fff;
+    margin: 0 1.4rem;
+    font-size:2rem;
+
+}

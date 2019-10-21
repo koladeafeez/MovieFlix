@@ -1,0 +1,85 @@
+nav {
+    margin-bottom: 30px;
+    
+}
+.user-state a {
+    margin-left: 550px;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+ li > a.active {
+     color: rgb(22, 129, 106) !important;
+
+ }
+  li {
+     list-style-type: none;
+     display: inline;
+     font-size:1.5rem;
+ }
+ 
+
+ .background {
+     margin-top: 3.5rem;
+     margin-bottom: 10rem;
+    
+     background: url(./../assets/img/background.jpg);
+ }
+ .navbar-brand{
+     font-size: 2.8rem;
+     font-family: 'Courier New', Courier, monospace;
+
+ }
+ #user a{
+     color:rgb(165, 121, 163);
+     font-weight: 800;
+ }
+
+  /* Extra small devices (portrait phones, less than 576px)
+ No media query since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px){
+
+}
+ /* Medium devices (tablets, 768px and up) */
+
+@media only screen and (max-width: 768px){
+    .navbar-brand{
+        font-size: 1rem;
+        font-family: 'Courier New', Courier, monospace;
+   
+    }
+
+    li {
+        list-style-type: none;
+        display: inline;
+        font-size:1rem;
+    }
+    
+
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px){
+    .navbar-brand{
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+   
+    }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px){
+    .navbar-brand{
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+   
+    }
+}

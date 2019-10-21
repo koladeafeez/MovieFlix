@@ -1,0 +1,45 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-4 col-lg-3 col-sm-6  card" *ngFor = "let movie of visibleMovies"  >
+        <img src="{{ movie.image.url }}" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <a [routerLink] ="['/movies', movie._id]" >{{ movie.title }} </a></h5>
+          <p class="card-text">  {{ movie.shortdescription }} </p>
+          <span><a [routerLink] ="['/movies', movie._id]"> More Details </a></span>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> Genre <br/> {{ movie.genre }} </li>
+          <li class="list-group-item"> Release Year : {{movie.releaseYear}} </li>
+          <li class="list-group-item"> Rating : {{ movie.rating }} </li>
+        </ul>
+    </div>
+    </div>
+</div>
+  
+<!-- <div class="container">
+<div class="row">
+    <div class="card col-lg-3 col-md-6 col-sm-12" style="margin-left: 20px;" *ngFor = "let movie of visibleMovies" >
+      <!-- <div class="card-image"> 
+        <img src="{{ movie.image.url }}" class="card-img-top img-thumbnail img-fluid card-image " alt="...">
+
+        <h3> {{ movie.title }}</h3>
+        <p class="card-text card-text ">  {{ movie.shortdescription }} <a [routerLink] ="['/movies', movie._id]"> MORE </a></p>
+
+        {{ movie.shortdescription }}
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">{{ movie.genre }}</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">views</div>
+        </div>
+        <div class="stat">
+         <div class="value">32</div>
+          <div class="type">comments</div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> -->
