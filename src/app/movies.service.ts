@@ -17,7 +17,6 @@ export class MoviesService {
     //   subject.complete();
     // }, 100)
     // return subject;
-    console.log("cors");
     return this.http
       .get<IMovies[]>("https://muvieflixx.herokuapp.com/api/movies/")
       .pipe(catchError(this.handleError<IMovies[]>("getMovies", [])));
@@ -25,7 +24,6 @@ export class MoviesService {
 
   private handleError<T>(operation = "operation", result?: T) {
     return (error: any): Observable<T> => {
-      console.error(error);
       return of(result as T);
     };
   }
